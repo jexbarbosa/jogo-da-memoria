@@ -45,6 +45,7 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 600;
+    border-radius: 5px;
 }
 
 .reset:focus {
@@ -92,4 +93,77 @@ body {
 
 .boxOpen::after, .boxMatch::after {
     transform: rotateY(180deg);
+}
+
+/* Mobile Devices (Landscape) and Small Tablets: */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  body {
+    width: 380px;
+  }
+  .title {
+    size: 3em;
+  }
+  .game {
+    gap: 10px;
+  }
+  .item {
+    width: 70px;
+    height: 70px;
+    font-size: 3em;
+  }
+  .reset {
+    font-size: 1.5em
+  }
+}
+
+  
+
+/* Tablets and Small Desktops: */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    width: 500px;
+  }
+  
+  .game {
+    gap: 15px;
+  }
+  .item {
+    width: 100px;
+    height: 100px;
+    font-size: 3em;
+  }
+  
+}
+
+/* Desktops and Laptops: */
+
+@media screen and (min-width: 992px) {
+  body {
+    width: 800px;
+    padding: 10px 15px;
+  }
+  .title {
+    size: 3.5em;
+  }
+  .game {
+    width: 500px;
+    gap: 10px;
+  }
+  .item {
+    width: 110px;
+    height: 110px;
+    font-size: 3.8em;
+  }
+  .reset {
+    width: 500px;
+    font-size: 1.8em
+  }
+}
+
+/* Large Desktops and High-Resolution Displays: */
+
+@media screen and (min-width: 1200px) {
+
 }
