@@ -30,7 +30,7 @@ for(let i = 0; i < emojis.length; i++) {
 }
 
 function playSound(audioName){
-    let audio = new Audio(`https://github.com/jexbarbosa/jogo-da-memoria/src/audios/${audioName}.m4a`);
+    let audio = new Audio(`https://jexbarbosa.github.io/jogo-da-memoria/src/audios/${audioName}.m4a`);
     audio.volume = 0.2;
     audio.play();
   }
